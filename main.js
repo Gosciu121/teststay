@@ -93,10 +93,10 @@ client.on('message', message => {
 
   if (server) {
     getPlayers(server.url).then(response => {
-      let block = [_.startCase(_.toLower(server.name)), + " Liczba graczy: " + response.data.length + "/32", "-ID- -Nick- -Hex-** "];
+      let block = [_.startCase(_.toLower(server.name)) + " Liczba graczy: " + response.data.length + "/32", "-ID- | -Nick- | -Hex- "];
       for (let player of response.data) {
         let playerId = _.padStart(player.id, 2);
-        block.push("[" + playerId + "] " + player.name + " " + player.identifiers[0]);
+        block.push(" [" + playerId + "] | " + player.name + " | " + player.identifiers[0]);
       }
       message.channel.send(block.concat("\n"), {code: true});
     }).catch(error => {
