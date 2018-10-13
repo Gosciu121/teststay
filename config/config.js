@@ -3,7 +3,7 @@ module.exports.options = {
     topicChannels: [
       'lista'
     ],
-    roles: ["Admin"],
+    roles: ["🏠CYWIL"],
     servers: [
         { name: 'Stay-Alive', url: 'http://173.249.17.251:10120', alias: 'lista' }
         
