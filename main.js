@@ -76,6 +76,17 @@ client.on('message', message => {
   }
 
   // Check if the messager has the required role
+   let foundRole = true;
+  for (const role of options.roles) {
+    if (message.member.roles.find("name", role)){
+      foundRole = false;
+      break;
+    }
+  }
+  if (!foundRole) {
+    return false;
+  }
+
  
   // Parse the command and find a matching server from options array
   const rawCommand = String(message.content).substr(1).trim().toLowerCase().replace(/ /g,'');
