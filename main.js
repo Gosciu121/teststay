@@ -76,10 +76,10 @@ client.on('message', message => {
   }
 
   // Check if the messager has the required role
-  let foundRole = false;
+  let foundRole = true;
   for (const role of options.roles) {
     if (message.member.roles.find("name", role)){
-      foundRole = true;
+      foundRole = false;
       break;
     }
   }
