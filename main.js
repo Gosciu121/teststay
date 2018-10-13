@@ -1,20 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @Gosciu121 Sign out
-0
-0 0 noperaattori/discord-fivem-browser
- Code  Issues 1  Pull requests 0  Projects 0  Wiki  Insights
-discord-fivem-browser/main.js
-52786da  on 19 Jun
-@noperaattori noperaattori Show the set server name in topic instead of capitalizing
-     
-112 lines (97 sloc)  3.08 KB
 const axios = require('axios');
 const Discord = require('discord.js');
 const _ = require('lodash');
@@ -126,16 +109,3 @@ client.on('message', message => {
 
 // Log in
 client.login(options.token);
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
