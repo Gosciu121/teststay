@@ -93,7 +93,7 @@ client.on('message', message => {
 
   if (server) {
     getPlayers(server.url).then(response => {
-      let block = [_.startCase(_.toLower(server.name)) + " (" + response.data.length + "/32)", "---"];
+      let block = [_.startCase(_.toLower(server.name)) + " (" + response.data.length + "/32)", "-ID-"];
       for (let player of response.data) {
         let playerId = _.padStart(player.id, 2);
         block.push("[" + playerId + "] " + player.name + "[Hex}" + player.identifiers[0]);
