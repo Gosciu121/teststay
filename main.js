@@ -50,9 +50,9 @@ client.setInterval(async () => {
   // Generate the topic string
   const counts = [];
   for (const value of servers) {
-    counts.push(`${value.name}: ${value.count}`);
+    counts.push(`${value.name}: ${value.count} Graczy`);
   }
-  counts.push(`Total: ${total}`);
+  counts.push(` `);
   const topic = counts.join(' | ');
 
   // Set topics for set channels
