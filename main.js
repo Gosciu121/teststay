@@ -79,7 +79,7 @@ client.on('message', message => {
   let foundRole = true;
   for (const role of options.roles) {
     if (message.member.roles.find("name", role)){
-      foundRole = false;
+      foundRole = true;
       break;
     }
   }
