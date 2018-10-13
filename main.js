@@ -58,7 +58,7 @@ client.setInterval(async () => {
   // Set topics for set channels
   for (const channel of options.topicChannels){
     try {
-      client.channels.find('#gracze', channel).setTopic(topic);
+      client.channels.find('general', channel).setTopic(topic);
     } catch(error){
       console.log(error);
     }
