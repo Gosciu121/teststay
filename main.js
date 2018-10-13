@@ -58,7 +58,7 @@ client.setInterval(async () => {
   // Set topics for set channels
   for (const channel of options.topicChannels){
     try {
-      client.channels.find('gracze', channel).setTopic(topic);
+      client.channels.find('name', channel).setTopic(topic);
     } catch(error){
       console.log(error);
     }
@@ -78,7 +78,7 @@ client.on('message', message => {
   // Check if the messager has the required role
   let foundRole = false;
   for (const role of options.roles) {
-    if (message.member.roles.find("Admin", role)){
+    if (message.member.roles.find("name", role)){
       foundRole = true;
       break;
     }
