@@ -53,7 +53,7 @@ client.setInterval(async () => {
     counts.push(`${value.name}: ${value.count} Graczy`);
   }
   counts.push(` `);
-  const topic = counts.join(' | ');
+  const topic = counts.join('  ');
 
   // Set topics for set channels
   for (const channel of options.topicChannels){
