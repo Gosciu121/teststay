@@ -1,5 +1,5 @@
 module.exports.options = {
-    token: 'NTAwNDE2NDI2MjcyNjIwNTU5.DqKs3A.t13JpPcM4hlI_uQy0wQa3c5nmvE',
+    token: '',
     topicChannels: [
       'ooc'
     ],
